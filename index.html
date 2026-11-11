@@ -3,81 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SOUTH SIDE Slice — Pizzeria Italiana</title>
+<title>SOUTH SIDE Slice — Pizzeria a Milano</title>
+<meta name="description" content="Pizzeria napoletana a Milano. Impasto 72 ore, farina 00 Caputo, forno a legna a 450°.">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   --paper:#FAF5EA;
   --ink:#17130E;
-  --ink-2:#2E2820;
-  --body:#3D362B;
+  --body:#3B352A;
   --red:#9E1B14;
   --line:#D9CDB6;
   --soft:#EFE6D2;
+  --green:#2F4A2E;
 }
 html{scroll-behavior:smooth}
 body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 img{display:block;width:100%}
-.serif{font-family:'Cormorant Garamond',serif}
 
 /* TOP */
-.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 6%;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--ink-2);border-bottom:1px solid var(--line);background:#F1E9D8;font-weight:600}
-nav{position:sticky;top:0;z-index:20;background:rgba(250,245,234,.96);backdrop-filter:blur(8px);display:flex;justify-content:space-between;align-items:center;padding:16px 6%;border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;gap:14px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:11px 6%;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#2E2820;border-bottom:1px solid var(--line);background:#F1E9D8;font-weight:600}
+nav{position:sticky;top:0;z-index:20;background:rgba(250,245,234,.96);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:15px 6%;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:13px}
 .brand-mark{width:46px;height:46px;background:var(--red);color:#fff;display:grid;place-items:center;font-size:10px;line-height:1.15;text-align:center;font-weight:700;letter-spacing:.5px;flex-shrink:0}
-.brand h1{font-size:20px;letter-spacing:1px;font-weight:700;line-height:1;color:var(--ink)}
+.brand h1{font-size:20px;letter-spacing:1px;font-weight:700;line-height:1}
 .brand span{display:block;font-size:11px;letter-spacing:2px;color:var(--body);margin-top:4px;font-weight:600}
-.nav-links{display:flex;gap:30px;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--ink-2);font-weight:600}
-.nav-links a{padding-bottom:3px;border-bottom:2px solid transparent}
+.nav-links{display:flex;gap:28px;font-size:13px;letter-spacing:.5px;text-transform:uppercase;color:#2E2820;font-weight:600}
+.nav-links a{padding-bottom:3px;border-bottom:2px solid transparent;transition:border .3s ease}
 .nav-links a:hover{border-color:var(--red);color:var(--red)}
-.nav-cta{font-size:13px;letter-spacing:.5px;border:2px solid var(--ink);padding:11px 16px;text-transform:uppercase;font-weight:700;background:#fff}
+.nav-cta{font-size:13px;border:2px solid var(--ink);padding:10px 15px;text-transform:uppercase;font-weight:700;background:#fff;transition:.3s ease}
 .nav-cta:hover{background:var(--ink);color:#fff}
 @media(max-width:760px){.nav-links{display:none}.topbar span:last-child{display:none}}
 
 /* HERO */
-.hero{display:grid;grid-template-columns:1.05fr .95fr;min-height:86vh;background:#fff}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;min-height:88vh;background:#fff}
 @media(max-width:860px){.hero{grid-template-columns:1fr}}
 .hero-text{padding:52px 6% 44px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--line)}
 .kicker{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--red);font-weight:700;display:flex;align-items:center;gap:12px}
 .kicker:before{content:"";width:32px;height:2px;background:var(--red)}
-.hero-text h2{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(60px,7.5vw,96px);line-height:.92;letter-spacing:-1px;margin:20px 0 16px;color:var(--ink)}
-.hero-text h2 i{color:var(--red)}
-.hero-text p{max-width:520px;color:var(--body);font-size:18px;line-height:1.65;font-weight:400}
-.hero-actions{display:flex;gap:16px;margin-top:30px;flex-wrap:wrap;align-items:center}
-.btn-solid{background:var(--ink);color:#fff;padding:15px 24px;font-size:13px;letter-spacing:1px;text-transform:uppercase;font-weight:700}
-.btn-solid:hover{background:var(--red)}
+.hero-text h2{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(60px,7.5vw,96px);line-height:.92;letter-spacing:-1px;margin:20px 0 16px}
+.hero-text h2 i{color:var(--red);font-weight:500}
+.hero-text p{max-width:520px;color:var(--body);font-size:18px;line-height:1.65}
+.hero-actions{display:flex;gap:18px;margin-top:30px;flex-wrap:wrap;align-items:center}
+.btn-solid{background:var(--ink);color:#fff;padding:15px 24px;font-size:13px;letter-spacing:1px;text-transform:uppercase;font-weight:700;transition:background .3s ease, transform .3s ease;display:inline-block}
+.btn-solid:hover{background:var(--red);transform:translateY(-1px)}
 .btn-line{padding:14px 2px;font-size:13px;letter-spacing:1px;text-transform:uppercase;font-weight:700;border-bottom:2px solid var(--ink)}
 .hero-meta{margin-top:38px;padding-top:20px;border-top:1px solid var(--line);display:flex;gap:36px;flex-wrap:wrap}
 .hero-meta div small{display:block;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--body);margin-bottom:4px;font-weight:600}
-.hero-meta div b{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:var(--ink)}
+.hero-meta div b{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600}
 .hero-img{position:relative;overflow:hidden;background:#222}
-.hero-img img{height:100%;min-height:540px;object-fit:cover;filter:brightness(.92)}
+.hero-img img{height:100%;min-height:540px;object-fit:cover;filter:brightness(.93);transition:transform 1.4s ease, filter 1.4s ease}
+.hero-img:hover img{transform:scale(1.02);filter:brightness(1)}
 .hero-caption{position:absolute;left:20px;bottom:20px;right:20px;background:#fff;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:16px;border:1px solid var(--line)}
 .hero-caption small{color:var(--body);font-size:14px;line-height:1.5;font-weight:500}
-.hero-caption b{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--ink);white-space:nowrap}
+.hero-caption b{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;white-space:nowrap}
 
 /* STRIP */
-.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;padding:13px 6%;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-2);font-weight:600;overflow:hidden;white-space:nowrap;gap:24px;background:var(--soft)}
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;padding:13px 6%;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#2E2820;font-weight:600;overflow:hidden;white-space:nowrap;gap:24px;background:var(--soft)}
 
 /* SECTIONS */
 section{padding:64px 6%}
 .head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:30px}
-.head h3{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,5vw,62px);line-height:.95;font-weight:600;color:var(--ink)}
-.head h3 i{color:var(--red)}
-.head p{max-width:420px;color:var(--body);line-height:1.65;font-size:16px;font-weight:400}
+.head h3{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,5vw,62px);line-height:.95;font-weight:600}
+.head h3 i{color:var(--red);font-weight:500}
+.head p{max-width:420px;color:var(--body);line-height:1.65;font-size:16px}
 .head a{font-size:13px;letter-spacing:1px;text-transform:uppercase;font-weight:700;border-bottom:2px solid var(--ink);padding-bottom:3px}
 
 /* MENU */
 .menu-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}
 @media(max-width:860px){.menu-wrap{grid-template-columns:1fr}}
-.menu-item{padding:22px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+.menu-item{padding:22px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:flex-start;transition:background .3s ease;padding-left:8px;padding-right:8px}
+.menu-item:hover{background:#FFFDF7}
 .menu-item:first-child{border-top:1px solid var(--line)}
-.menu-item h4{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;line-height:1.1;color:var(--ink)}
+.menu-item h4{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;line-height:1.1}
 .menu-item h4 span{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:1px;background:var(--red);color:#fff;padding:5px 7px;margin-left:8px;vertical-align:middle;text-transform:uppercase;font-weight:700}
-.menu-item p{color:var(--body);font-size:15.5px;line-height:1.6;margin-top:7px;max-width:460px;font-weight:400}
-.menu-item b{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;white-space:nowrap;color:var(--ink)}
+.menu-item p{color:var(--body);font-size:15.5px;line-height:1.6;margin-top:7px;max-width:460px}
+.menu-item b{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;white-space:nowrap}
 .menu-side{position:sticky;top:100px}
 .menu-side img{height:430px;object-fit:cover}
 .menu-side figcaption{margin-top:12px;font-size:13px;color:var(--body);line-height:1.6;display:flex;justify-content:space-between;gap:12px;font-weight:500}
@@ -85,70 +87,82 @@ section{padding:64px 6%}
 /* STORY */
 .story{display:grid;grid-template-columns:.9fr 1.1fr;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 @media(max-width:860px){.story{grid-template-columns:1fr}}
-.story-img img{height:100%;min-height:460px;object-fit:cover}
+.story-img{overflow:hidden}
+.story-img img{height:100%;min-height:460px;object-fit:cover;transition:transform 1.4s ease}
+.story-img:hover img{transform:scale(1.02)}
 .story-text{padding:48px 6%;display:flex;flex-direction:column;justify-content:center}
-.story-text h3{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,5vw,60px);line-height:.95;font-weight:600;color:var(--ink)}
-.story-text h3 i{color:var(--red)}
+.story-text h3{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,5vw,60px);line-height:.95;font-weight:600}
+.story-text h3 i{color:var(--red);font-weight:500}
 .story-text p{margin:18px 0;color:var(--body);line-height:1.7;font-size:17px;max-width:540px}
 .facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);margin-top:10px}
 .facts div{padding:16px 12px 16px 0;border-right:1px solid var(--line)}
 .facts div:last-child{border-right:none}
-.facts b{font-family:'Cormorant Garamond',serif;font-size:30px;display:block;color:var(--ink)}
+.facts b{font-family:'Cormorant Garamond',serif;font-size:30px;display:block}
 .facts span{font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--body);font-weight:600}
+
+/* INFO ITALIA */
+.info-band{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:0 6% 0}
+@media(max-width:760px){.info-band{grid-template-columns:1fr}}
+.info-band div{background:#fff;padding:24px}
+.info-band small{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700}
+.info-band b{font-family:'Cormorant Garamond',serif;font-size:24px;display:block;margin:8px 0 4px}
+.info-band p{color:var(--body);font-size:14.5px;line-height:1.6}
 
 /* WORK */
 .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
 @media(max-width:860px){.work-grid{grid-template-columns:1fr}}
-.work-item{background:#fff}
+.work-item{background:#fff;transition:transform .4s ease}
+.work-item:hover{transform:translateY(-3px)}
 .work-item img{height:260px;object-fit:cover}
 .work-item div{padding:20px}
 .work-item small{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700}
-.work-item h4{font-family:'Cormorant Garamond',serif;font-size:28px;margin:8px 0 6px;color:var(--ink)}
+.work-item h4{font-family:'Cormorant Garamond',serif;font-size:28px;margin:8px 0 6px}
 .work-item p{color:var(--body);font-size:15px;line-height:1.6}
 .logo-block{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;margin-top:44px;padding:32px 0;border-top:2px solid var(--ink)}
 @media(max-width:760px){.logo-block{grid-template-columns:1fr}}
 .logo-block img{height:380px;object-fit:cover;background:#fff;border:1px solid var(--line)}
-.logo-block h4{font-family:'Cormorant Garamond',serif;font-size:42px;line-height:1;color:var(--ink)}
+.logo-block h4{font-family:'Cormorant Garamond',serif;font-size:42px;line-height:1}
 .logo-block p{color:var(--body);line-height:1.7;margin:14px 0;font-size:16px}
 .logo-list{list-style:none;margin:18px 0}
-.logo-list li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;font-size:14px;font-weight:600;color:var(--ink)}
+.logo-list li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;font-size:14px;font-weight:600}
 .logo-list li span{color:var(--body);font-weight:400;text-align:right}
 
 /* BOOKING */
 .booking{background:#17130E;color:#FAF5EA;padding:56px 6%;display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:center}
 .booking h3{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,56px);line-height:.95;font-weight:600}
-.booking h3 i{color:#E8A99E}
+.booking h3 i{color:#E8A99E;font-weight:500}
 .booking p{color:#D8D0BE;line-height:1.65;margin-top:12px;max-width:440px;font-size:16px}
 .booking-form{display:flex;flex-wrap:wrap}
 .booking-form input{padding:15px 16px;border:1px solid #555;background:transparent;color:#fff;min-width:240px;outline:none;font-family:inherit;font-size:15px}
 .booking-form input::placeholder{color:#aaa}
-.booking-form button{background:var(--red);color:#fff;padding:15px 22px;font-size:13px;letter-spacing:1px;text-transform:uppercase;font-weight:700}
+.booking-form button{background:var(--red);color:#fff;padding:15px 22px;font-size:13px;letter-spacing:1px;text-transform:uppercase;font-weight:700;transition:background .3s ease}
+.booking-form button:hover{background:#7A140E}
 footer{padding:26px 6% 32px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--body);font-size:14px;border-top:1px solid var(--line);font-weight:500}
 footer b{color:var(--ink)}
 
-/* Reveal - very subtle */
-.reveal{opacity:0;transform:translateY(10px);transition:opacity .7s ease, transform .7s ease}
+/* REVEAL - morbido, lento */
+.reveal{opacity:0;transform:translateY(12px);transition:opacity .9s ease, transform .9s ease}
 .reveal.visible{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 
-<div class="topbar"><span>South Side Slice — Pizzeria</span><span>Mar — Dom • 12:00 — 23:00</span><span>Via Roma 12, Italia</span></div>
+<div class="topbar"><span>South Side Slice — Milano</span><span>Mar — Dom • 12:00 — 15:00 / 18:30 — 23:30</span><span>Via Tortona 12, Milano</span></div>
 
 <nav>
   <a class="brand" href="#"><div class="brand-mark">SOUTH<br>SIDE</div><div><h1>SLICE</h1><span>PIZZERIA ITALIANA</span></div></a>
-  <div class="nav-links"><a href="#menu">Menu</a><a href="#metodo">Metodo</a><a href="#lavoro">Il Mio Lavoro</a><a href="#contatti">Contatti</a></div>
+  <div class="nav-links"><a href="#menu">Menù</a><a href="#metodo">Metodo</a><a href="#lavoro">Il Mio Lavoro</a><a href="#contatti">Contatti</a></div>
   <a class="nav-cta" href="#prenota">Prenota un tavolo</a>
 </nav>
 
 <header class="hero">
   <div class="hero-text">
-    <div class="kicker">Neapolitana • Dal 2019</div>
+    <div class="kicker">Pizzeria Napoletana • Milano • Dal 2019</div>
     <h2>Scienza,<br>farina <i>&</i> fuoco.</h2>
-    <p>Ogni pizza è uno studio. Impasto di 72 ore, farina 00 Caputo, forno a legna a 450°. Pochi ingredienti, fatti bene. Senza fretta.</p>
+    <p>Ogni pizza è uno studio. Impasto di 72 ore, farina 00 Caputo, forno a legna a 450°. Pochi ingredienti, fatti bene. Senza fretta, come si fa in Italia.</p>
     <div class="hero-actions">
-      <a class="btn-solid" href="#menu">Scopri il menu</a>
+      <a class="btn-solid" href="#menu">Scopri il menù</a>
       <a class="btn-line" href="#metodo">Il nostro metodo →</a>
     </div>
     <div class="hero-meta">
@@ -173,12 +187,12 @@ footer b{color:var(--ink)}
   </div>
   <div class="menu-wrap">
     <div>
-      <div class="menu-item"><div><h4>Margherita D.O.P. <span>La classica</span></h4><p>San Marzano, fior di latte, basilico fresco, olio extra vergine.</p></div><b>€14</b></div>
-      <div class="menu-item"><div><h4>Diavola</h4><p>Salame piccante, fior di latte, miele, olio al peperoncino.</p></div><b>€17</b></div>
-      <div class="menu-item"><div><h4>Prosciutto e Rucola</h4><p>Prosciutto 18 mesi, rucola, parmigiano, scorza di limone.</p></div><b>€19</b></div>
-      <div class="menu-item"><div><h4>Quattro Formaggi</h4><p>Fior di latte, gorgonzola, fontina, parmigiano 24 mesi.</p></div><b>€18</b></div>
-      <div class="menu-item"><div><h4>Tartufo Nero</h4><p>Tartufo nero, funghi, timo, fontina.</p></div><b>€21</b></div>
-      <p style="margin-top:16px;color:var(--body);font-size:14px">Impasto integrale disponibile • Tutte le pizze anche da asporto</p>
+      <div class="menu-item"><div><h4>Margherita D.O.P. <span>La classica</span></h4><p>San Marzano, fior di latte, basilico fresco, olio extra vergine d'oliva.</p></div><b>€14</b></div>
+      <div class="menu-item"><div><h4>Diavola</h4><p>Salame piccante, fior di latte, miele d'acacia, olio al peperoncino.</p></div><b>€17</b></div>
+      <div class="menu-item"><div><h4>Prosciutto e Rucola</h4><p>Prosciutto crudo 18 mesi, rucola, parmigiano 24 mesi, scorza di limone.</p></div><b>€19</b></div>
+      <div class="menu-item"><div><h4>Quattro Formaggi</h4><p>Fior di latte, gorgonzola D.O.P., fontina, parmigiano 24 mesi.</p></div><b>€18</b></div>
+      <div class="menu-item"><div><h4>Tartufo Nero</h4><p>Tartufo nero, funghi porcini, timo fresco, fontina.</p></div><b>€21</b></div>
+      <p style="margin-top:16px;color:var(--body);font-size:14px">Impasto integrale disponibile • Tutte le pizze anche da asporto • Coperto €2</p>
     </div>
     <figure class="menu-side">
       <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1000&q=80" alt="Pizza">
@@ -192,28 +206,27 @@ footer b{color:var(--ink)}
   <div class="story-text">
     <small style="letter-spacing:2.5px;font-size:12px;color:var(--red);font-weight:700">IL METODO</small>
     <h3 style="margin-top:14px">L’impasto è dato,<br><i>il fuoco è volontà.</i></h3>
-    <p>La nostra pasta madre vive dal 2019. Ogni giorno viene nutrita con farina 00 Caputo. Il risultato è una complessità che non si può fingere. Si sente al primo morso.</p>
+    <p>La nostra pasta madre vive dal 2019. Ogni giorno viene nutrita con farina 00 Caputo. Il risultato è una complessità che non si può fingere. Si sente al primo morso. A Milano facciamo la pizza come a Napoli, senza scorciatoie.</p>
     <div class="facts"><div><b>72h</b><span>Lievitazione</span></div><div><b>450°</b><span>Forno</span></div><div><b>00</b><span>Caputo</span></div></div>
   </div>
 </div>
 
-<section id="lavoro" class="reveal">
+<section id="lavoro" class="reveal" style="padding-bottom:32px">
   <div class="head">
     <h3>Il mio lavoro<br><i>come logo designer.</i></h3>
-    <p>Disegno loghi minimali e leggibili per pizzerie e brand internazionali. Stesso principio della pizza: togliere, non aggiungere.</p>
+    <p>Disegno loghi minimali e leggibili per pizzerie e brand italiani e internazionali. Stesso principio della pizza: togliere, non aggiungere.</p>
   </div>
   <div class="work-grid">
-    <article class="work-item"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80"><div><small>Pizzeria</small><h4>South Side Slice</h4><p>Logo, menu, scatola e kit social. Pronto in 2 giorni.</p></div></article>
+    <article class="work-item"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80"><div><small>Pizzeria</small><h4>South Side Slice</h4><p>Logo, menù, scatola e kit social. Pronto in 2 giorni.</p></div></article>
     <article class="work-item"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=800&q=80"><div><small>Branding</small><h4>Mockup 3D</h4><p>Vedi il tuo logo su scatola, grembiule e insegna prima del lancio.</p></div></article>
-    <article class="work-item"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80"><div><small>Menu Design</small><h4>Menu che vende</h4><p>Impaginazione chiara, che guida l’occhio senza urlare.</p></div></article>
+    <article class="work-item"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80"><div><small>Menù Design</small><h4>Menù che funziona</h4><p>Impaginazione chiara, che guida l’occhio senza urlare.</p></div></article>
   </div>
-
   <div class="logo-block">
     <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1000&q=80" alt="South Side Slice logo preview">
     <div>
       <small style="letter-spacing:2px;color:var(--red);font-size:12px;font-weight:700">PROGETTO IN EVIDENZA</small>
       <h4 style="margin-top:10px">SOUTH SIDE<br>Slice</h4>
-      <p>Minimale, casual, leggibile. Rosso e bianco. Funziona su scatola, menu e Instagram senza perdere carattere.</p>
+      <p>Minimale, casual, leggibile. Rosso e bianco. Funziona su scatola, menù e Instagram senza perdere carattere.</p>
       <ul class="logo-list">
         <li><b>Consegna</b><span>2 giorni</span></li>
         <li><b>Revisioni</b><span>Illimitate</span></li>
@@ -221,6 +234,14 @@ footer b{color:var(--ink)}
       </ul>
       <a class="btn-solid" href="#contatti">Richiedi un logo così</a>
     </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="info-band reveal">
+    <div><small>Dove siamo</small><b>Milano, Via Tortona 12</b><p>Zona Navigli. A 5 minuti dalla metro M2 Porta Genova.</p></div>
+    <div><small>Orari</small><b>Mar — Dom</b><p>Pranzo 12:00 — 15:00<br>Cena 18:30 — 23:30<br>Lunedì chiuso</p></div>
+    <div><small>Asporto e delivery</small><b>In 15 minuti</b><p>Asporto e delivery in zona Navigli e Tortona. Consegna gratuita sopra i 25€.</p></div>
   </div>
 </section>
 
@@ -233,13 +254,13 @@ footer b{color:var(--ink)}
 </div>
 
 <footer id="contatti">
-  <div><b>SOUTH SIDE Slice</b><br>Via Roma 12 — Italia<br>Mar — Dom • 12:00 — 23:00</div>
-  <div><b>Logo & Collaborazioni</b><br>Instagram: @tuohandle<br>Email: ciao@southsideslice.it</div>
-  <div>© 2026 South Side Slice<br>Fatto con calma, a mano.</div>
+  <div><b>SOUTH SIDE Slice</b><br>Via Tortona 12 — 20144 Milano, Italia<br>Mar — Dom • 12:00 — 15:00 / 18:30 — 23:30</div>
+  <div><b>Logo & Collaborazioni</b><br>Instagram: @tuohandle<br>Email: ciao@southsideslice.it<br>Tel: +39 02 0000 0000</div>
+  <div>© 2026 South Side Slice — Milano<br>Fatto con calma, a mano.</div>
 </footer>
 
 <script>
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1, rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 </body>
